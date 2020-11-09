@@ -20,8 +20,8 @@
 
 pulp_soc:
   commit: new_soc_interconnect
-  server: git@iis-git.ee.ethz.ch
-  group:  manuel.eggimann
+  server: https://github.com
+  group:  pulp-platform
 
 tbtools:
   commit: v0.1
