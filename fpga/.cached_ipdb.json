@@ -1,0 +1,8 @@
+{
+    "ips_dir": "ips",
+    "rtl_dir": "rtl",
+    "vsim_dir": "sim",
+    "fpgasim_dir": "./fpga/sim",
+    "ip_list": [],
+    "rtl_list": null
+}

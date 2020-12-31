@@ -1,0 +1,1467 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sumanth/shivam/pulp/pulpissimo/sim
+valu_ff
+Z1 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z2 DXx9 fpnew_lib 9 fpnew_pkg 0 22 BM<0_g:e3mKMPgNN0VhCP1
+Z3 DXx4 work 13 riscv_defines 0 22 D9D?FBX>iYP=?K0AVzCY92
+Z4 DXx4 work 17 riscv_alu_sv_unit 0 22 aE2:i]44oVSKMQdQUnJbO2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 ]1e]c5Nnl0VmzAIN8ZW>M2
+I07==5bB:S=LnQBDDIZ?7j2
+Z6 !s105 riscv_alu_sv_unit
+S1
+R0
+Z7 w1608180421
+Z8 8../ips/riscv/./rtl/riscv_alu.sv
+Z9 F../ips/riscv/./rtl/riscv_alu.sv
+L0 1157
+Z10 OL;L;10.7f;67
+31
+Z11 !s108 1609307015.000000
+Z12 !s107 ../ips/riscv/./rtl/include/riscv_config.sv|../ips/riscv/./rtl/include/apu_macros.sv|../ips/riscv/./rtl/riscv_pmp.sv|../ips/riscv/./rtl/riscv_L0_buffer.sv|../ips/riscv/./rtl/riscv_fetch_fifo.sv|../ips/riscv/./rtl/riscv_apu_disp.sv|../ips/riscv/./rtl/riscv_core.sv|../ips/riscv/./rtl/riscv_prefetch_L0_buffer.sv|../ips/riscv/./rtl/riscv_prefetch_buffer.sv|../ips/riscv/./rtl/riscv_mult.sv|../ips/riscv/./rtl/riscv_load_store_unit.sv|../ips/riscv/./rtl/riscv_if_stage.sv|../ips/riscv/./rtl/riscv_id_stage.sv|../ips/riscv/./rtl/riscv_hwloop_regs.sv|../ips/riscv/./rtl/riscv_hwloop_controller.sv|../ips/riscv/./rtl/riscv_ex_stage.sv|../ips/riscv/./rtl/riscv_int_controller.sv|../ips/riscv/./rtl/riscv_decoder.sv|../ips/riscv/./rtl/riscv_cs_registers.sv|../ips/riscv/./rtl/riscv_controller.sv|../ips/riscv/./rtl/riscv_compressed_decoder.sv|../ips/riscv/./rtl/riscv_alu_div.sv|../ips/riscv/./rtl/riscv_alu_basic.sv|../ips/riscv/./rtl/riscv_alu.sv|../ips/riscv/./rtl/include/riscv_tracer_defines.sv|../ips/riscv/./rtl/include/riscv_defines.sv|../ips/riscv/./rtl/include/apu_core_package.sv|
+Z13 !s90 -quiet|-sv|-work|/home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib|-L|fpnew_lib|-suppress|2583|-suppress|13314|+incdir+../ips/riscv/./rtl/include+../ips/riscv/../../rtl/includes|../ips/riscv/./rtl/include/apu_core_package.sv|../ips/riscv/./rtl/include/riscv_defines.sv|../ips/riscv/./rtl/include/riscv_tracer_defines.sv|../ips/riscv/./rtl/riscv_alu.sv|../ips/riscv/./rtl/riscv_alu_basic.sv|../ips/riscv/./rtl/riscv_alu_div.sv|../ips/riscv/./rtl/riscv_compressed_decoder.sv|../ips/riscv/./rtl/riscv_controller.sv|../ips/riscv/./rtl/riscv_cs_registers.sv|../ips/riscv/./rtl/riscv_decoder.sv|../ips/riscv/./rtl/riscv_int_controller.sv|../ips/riscv/./rtl/riscv_ex_stage.sv|../ips/riscv/./rtl/riscv_hwloop_controller.sv|../ips/riscv/./rtl/riscv_hwloop_regs.sv|../ips/riscv/./rtl/riscv_id_stage.sv|../ips/riscv/./rtl/riscv_if_stage.sv|../ips/riscv/./rtl/riscv_load_store_unit.sv|../ips/riscv/./rtl/riscv_mult.sv|../ips/riscv/./rtl/riscv_prefetch_buffer.sv|../ips/riscv/./rtl/riscv_prefetch_L0_buffer.sv|../ips/riscv/./rtl/riscv_core.sv|../ips/riscv/./rtl/riscv_apu_disp.sv|../ips/riscv/./rtl/riscv_fetch_fifo.sv|../ips/riscv/./rtl/riscv_L0_buffer.sv|../ips/riscv/./rtl/riscv_pmp.sv|
+!i113 0
+Z14 o-suppress 2583 -suppress 13314 -quiet -sv -work /home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib -L fpnew_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -suppress 2583 -suppress 13314 -quiet -sv -work /home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib -L fpnew_lib +incdir+../ips/riscv/./rtl/include+../ips/riscv/../../rtl/includes -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z16 tCvgOpt 0
+valu_popcnt
+R1
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 naa1Y4ANFM5MXbeW:@V9e3
+INMn@[L5DAENOo3Y6jOhCM1
+R6
+S1
+R0
+R7
+R8
+R9
+L0 1233
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xapu_core_package
+R1
+Z17 !s110 1609307015
+!i10b 1
+!s100 1`?e@cNFQFQ<TH]67]HKj3
+ITQS;7dJ9fP[b6O[i]9L;23
+VTQS;7dJ9fP[b6O[i]9L;23
+S1
+R0
+R7
+8../ips/riscv/./rtl/include/apu_core_package.sv
+F../ips/riscv/./rtl/include/apu_core_package.sv
+L0 22
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xperturbation_defines
+R1
+R17
+!i10b 1
+!s100 hDlLjn^Emc^jQ3jU9I]MG1
+IWTC97QCCXk<olD14AMRgf3
+VWTC97QCCXk<olD14AMRgf3
+S1
+R0
+R7
+8../ips/riscv/tb/tb_riscv/include/perturbation_defines.sv
+F../ips/riscv/tb/tb_riscv/include/perturbation_defines.sv
+L0 23
+R10
+r1
+!s85 0
+31
+R11
+!s107 ../ips/riscv/rtl/include/riscv_config.sv|../ips/riscv/tb/tb_riscv/riscv_random_stall.sv|../ips/riscv/tb/tb_riscv/riscv_random_interrupt_generator.sv|../ips/riscv/tb/tb_riscv/riscv_perturbation.sv|../ips/riscv/tb/tb_riscv/tb_riscv_core.sv|../ips/riscv/tb/tb_riscv/riscv_simchecker.sv|../ips/riscv/tb/tb_riscv/include/perturbation_defines.sv|
+Z18 !s90 -quiet|-sv|-work|/home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib|-suppress|2583|-suppress|13314|+incdir+../ips/riscv/tb/tb_riscv/include+../ips/riscv/rtl/include|../ips/riscv/tb/tb_riscv/include/perturbation_defines.sv|../ips/riscv/tb/tb_riscv/riscv_simchecker.sv|../ips/riscv/tb/tb_riscv/tb_riscv_core.sv|../ips/riscv/tb/tb_riscv/riscv_perturbation.sv|../ips/riscv/tb/tb_riscv/riscv_random_interrupt_generator.sv|../ips/riscv/tb/tb_riscv/riscv_random_stall.sv|
+!i113 0
+Z19 o-suppress 2583 -suppress 13314 -quiet -sv -work /home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 !s92 -suppress 2583 -suppress 13314 -quiet -sv -work /home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib +incdir+../ips/riscv/tb/tb_riscv/include+../ips/riscv/rtl/include -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R16
+vregister_file_test_wrap
+R1
+R17
+!i10b 1
+!s100 n5eZj_GJiK;:OH?V@SP:43
+ISVA;T@zanlYL3LnTUMlLM3
+R5
+!s105 register_file_test_wrap_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/register_file_test_wrap.sv
+F../ips/riscv/./rtl/register_file_test_wrap.sv
+L0 35
+R10
+r1
+!s85 0
+31
+R11
+Z21 !s107 ../ips/riscv/./rtl/riscv_register_file_latch.sv|../ips/riscv/./rtl/register_file_test_wrap.sv|
+Z22 !s90 -quiet|-sv|-work|/home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib|-suppress|2583|-suppress|13314|+incdir+../ips/riscv/./rtl/include|../ips/riscv/./rtl/register_file_test_wrap.sv|../ips/riscv/./rtl/riscv_register_file_latch.sv|
+!i113 0
+R19
+Z23 !s92 -suppress 2583 -suppress 13314 -quiet -sv -work /home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib +incdir+../ips/riscv/./rtl/include -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R16
+vriscv_alu
+R1
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 ]]A@TJK5C45=aAmHO>Q6J2
+IcnhMLXm6=PJbRg`[M6ek00
+R6
+S1
+R0
+R7
+R8
+R9
+Z24 L0 31
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_alu_basic
+R1
+R2
+R3
+DXx4 work 23 riscv_alu_basic_sv_unit 0 22 KdP91ShW]hCZBb=Mh;[:A3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 oHl]5i`JcGXgMGS0?KS@W1
+ISIoYQII[_b[B2=^D1KP0e3
+!s105 riscv_alu_basic_sv_unit
+S1
+R0
+R7
+Z25 8../ips/riscv/./rtl/riscv_alu_basic.sv
+Z26 F../ips/riscv/./rtl/riscv_alu_basic.sv
+Z27 L0 30
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_alu_basic_sv_unit
+R1
+R2
+R3
+VKdP91ShW]hCZBb=Mh;[:A3
+r1
+!s85 0
+!i10b 1
+!s100 g]eC^NfDcBPOGc0VIgcea1
+IKdP91ShW]hCZBb=Mh;[:A3
+!i103 1
+S1
+R0
+R7
+R25
+R26
+Z28 L0 28
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_alu_div
+R1
+R17
+!i10b 1
+!s100 6@IUbDH8J2de?[3hIQgaG0
+I@QF>d4CaYQaXWWfB9A^4m1
+R5
+!s105 riscv_alu_div_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_alu_div.sv
+F../ips/riscv/./rtl/riscv_alu_div.sv
+Z29 L0 26
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_alu_sv_unit
+R1
+R2
+R3
+VaE2:i]44oVSKMQdQUnJbO2
+r1
+!s85 0
+!i10b 1
+!s100 0`89?DbB]id9R;LVXz1Rc0
+IaE2:i]44oVSKMQdQUnJbO2
+!i103 1
+S1
+R0
+R7
+R8
+R9
+Z30 L0 29
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_apu_disp
+R1
+Z31 DXx4 work 16 apu_core_package 0 22 TQS;7dJ9fP[b6O[i]9L;23
+DXx4 work 22 riscv_apu_disp_sv_unit 0 22 jkhQb9zRk6bgzRYakjaXR3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 4`z8d`4XLEcUkHU7niTnT1
+IELoBF1Yi=n4KkPe:eYmN>0
+!s105 riscv_apu_disp_sv_unit
+S1
+R0
+R7
+Z32 8../ips/riscv/./rtl/riscv_apu_disp.sv
+Z33 F../ips/riscv/./rtl/riscv_apu_disp.sv
+Z34 L0 27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_apu_disp_sv_unit
+R1
+R31
+VjkhQb9zRk6bgzRYakjaXR3
+r1
+!s85 0
+!i10b 1
+!s100 7nfz`RS0UXAkUZO_DQSEY2
+IjkhQb9zRk6bgzRYakjaXR3
+!i103 1
+S1
+R0
+R7
+R32
+R33
+Z35 F../ips/riscv/./rtl/include/apu_macros.sv
+Z36 L0 15
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_compressed_decoder
+R1
+R2
+R3
+DXx4 work 32 riscv_compressed_decoder_sv_unit 0 22 mhS6ODMIoUKeDBSnjb=1Y0
+R5
+r1
+!s85 0
+!i10b 1
+!s100 cUz9J=IQLTXj80YfTN00e0
+I4hgf4@ch=jI3L;F4gz9lU0
+!s105 riscv_compressed_decoder_sv_unit
+S1
+R0
+R7
+Z37 8../ips/riscv/./rtl/riscv_compressed_decoder.sv
+Z38 F../ips/riscv/./rtl/riscv_compressed_decoder.sv
+R27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_compressed_decoder_sv_unit
+R1
+R2
+R3
+VmhS6ODMIoUKeDBSnjb=1Y0
+r1
+!s85 0
+!i10b 1
+!s100 jo8G5APQBfUf4>oWDO=][3
+ImhS6ODMIoUKeDBSnjb=1Y0
+!i103 1
+S1
+R0
+R7
+R37
+R38
+R28
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_controller
+R1
+R2
+R3
+DXx4 work 24 riscv_controller_sv_unit 0 22 S;J_<GgGc:ViJb`@4UkoB2
+R5
+r1
+!s85 0
+!i10b 1
+!s100 _CzgYVjlnXiaOB73eabP51
+Ij^7ST^=IBHiFA>2Z`eZ0=0
+!s105 riscv_controller_sv_unit
+S1
+R0
+R7
+Z39 8../ips/riscv/./rtl/riscv_controller.sv
+Z40 F../ips/riscv/./rtl/riscv_controller.sv
+Z41 L0 32
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_controller_sv_unit
+R1
+R2
+R3
+VS;J_<GgGc:ViJb`@4UkoB2
+r1
+!s85 0
+!i10b 1
+!s100 I[PNG5<63L`>HdM?UDhLI3
+IS;J_<GgGc:ViJb`@4UkoB2
+!i103 1
+S1
+R0
+R7
+R39
+R40
+R27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_core
+R1
+R31
+R2
+R3
+DXx4 work 18 riscv_core_sv_unit 0 22 NJADEGjZzi1V<WP_UTgUE3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 f@Enj9g36aNDHN8D<INH72
+IHSFn3:n9>X;X3O[Q=THbf1
+!s105 riscv_core_sv_unit
+S1
+R0
+R7
+Z42 8../ips/riscv/./rtl/riscv_core.sv
+Z43 F../ips/riscv/./rtl/riscv_core.sv
+L0 38
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_core_sv_unit
+R1
+R31
+R2
+R3
+VNJADEGjZzi1V<WP_UTgUE3
+r1
+!s85 0
+!i10b 1
+!s100 TMNo7EJ1A1KZcdAN`NPQ52
+INJADEGjZzi1V<WP_UTgUE3
+!i103 1
+S1
+R0
+R7
+R42
+R43
+F../ips/riscv/./rtl/include/riscv_config.sv
+R41
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_cs_registers
+R1
+R2
+R3
+DXx4 work 26 riscv_cs_registers_sv_unit 0 22 WQKdPfO?oIHFXWicP>lYY2
+R5
+r1
+!s85 0
+!i10b 1
+!s100 G0SB1KoCdja4E]MI6:8Om2
+IPi4OzAZh;LL1RS8mTM8O70
+!s105 riscv_cs_registers_sv_unit
+S1
+R0
+R7
+Z44 8../ips/riscv/./rtl/riscv_cs_registers.sv
+Z45 F../ips/riscv/./rtl/riscv_cs_registers.sv
+Z46 L0 37
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_cs_registers_sv_unit
+R1
+R2
+R3
+VWQKdPfO?oIHFXWicP>lYY2
+r1
+!s85 0
+!i10b 1
+!s100 >5N?CLCR_9]4YFWM_4NBZ3
+IWQKdPfO?oIHFXWicP>lYY2
+!i103 1
+S1
+R0
+R7
+R44
+R45
+R30
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_decoder
+R1
+R31
+R2
+R3
+DXx4 work 21 riscv_decoder_sv_unit 0 22 `FDi[eL0:k;J3L=cU]alJ3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 m8KRK:2VWMlzJFmAH7Jhc3
+I81;G[I;QSFz0nHYm^eYl20
+!s105 riscv_decoder_sv_unit
+S1
+R0
+R7
+Z47 8../ips/riscv/./rtl/riscv_decoder.sv
+Z48 F../ips/riscv/./rtl/riscv_decoder.sv
+R41
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_decoder_sv_unit
+R1
+R31
+R2
+R3
+V`FDi[eL0:k;J3L=cU]alJ3
+r1
+!s85 0
+!i10b 1
+!s100 hEhE2gnMFP[<CmC^`LT3=0
+I`FDi[eL0:k;J3L=cU]alJ3
+!i103 1
+S1
+R0
+R7
+R47
+R48
+R35
+R36
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_defines
+R1
+R2
+R17
+!i10b 1
+!s100 SLDQh>SYk^S_ATcYZeaaB0
+ID9D?FBX>iYP=?K0AVzCY92
+VD9D?FBX>iYP=?K0AVzCY92
+S1
+R0
+R7
+8../ips/riscv/./rtl/include/riscv_defines.sv
+F../ips/riscv/./rtl/include/riscv_defines.sv
+R29
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_ex_stage
+R1
+R31
+R2
+R3
+DXx4 work 22 riscv_ex_stage_sv_unit 0 22 ;_mJn[bkFm5on9jfzi:H>3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 ecOHbPZ[L;o2O_XFkajNb0
+IJ0ZK:11V3mno54SJD>C]l0
+!s105 riscv_ex_stage_sv_unit
+S1
+R0
+R7
+Z49 8../ips/riscv/./rtl/riscv_ex_stage.sv
+Z50 F../ips/riscv/./rtl/riscv_ex_stage.sv
+Z51 L0 40
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_ex_stage_sv_unit
+R1
+R31
+R2
+R3
+V;_mJn[bkFm5on9jfzi:H>3
+r1
+!s85 0
+!i10b 1
+!s100 dY09fRII9i6o2@dg5>VZz3
+I;_mJn[bkFm5on9jfzi:H>3
+!i103 1
+S1
+R0
+R7
+R49
+R50
+R35
+R36
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_fetch_fifo
+R1
+R17
+!i10b 1
+!s100 1a29cJgH]8oRSa@K36GbV1
+IOaX_J4:N_Mb4m:ai_7mdn3
+R5
+!s105 riscv_fetch_fifo_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_fetch_fifo.sv
+F../ips/riscv/./rtl/riscv_fetch_fifo.sv
+Z52 L0 25
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_hwloop_controller
+R1
+R17
+!i10b 1
+!s100 oMaf>Ba5zjE39nhh^mCNl3
+IV^i:DIVK9g;9i_j;>H@2U1
+R5
+!s105 riscv_hwloop_controller_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_hwloop_controller.sv
+F../ips/riscv/./rtl/riscv_hwloop_controller.sv
+R52
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_hwloop_regs
+R1
+R17
+!i10b 1
+!s100 1Z0UfPnEbKA[5:l:WSeAf0
+IHz7d2aXB1N;D7;dZEj0Y<0
+R5
+!s105 riscv_hwloop_regs_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_hwloop_regs.sv
+F../ips/riscv/./rtl/riscv_hwloop_regs.sv
+R52
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_id_stage
+R1
+R2
+R3
+R31
+DXx4 work 22 riscv_id_stage_sv_unit 0 22 jid65Jk9o9[FEi<RlD3iS0
+R5
+r1
+!s85 0
+!i10b 1
+!s100 TzZOAZFoEUT974Y=MfBc73
+IU;mVMkE]fV0l1g=>J;8<i2
+!s105 riscv_id_stage_sv_unit
+S1
+R0
+R7
+Z53 8../ips/riscv/./rtl/riscv_id_stage.sv
+Z54 F../ips/riscv/./rtl/riscv_id_stage.sv
+R51
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_id_stage_sv_unit
+R1
+R2
+R3
+R31
+Vjid65Jk9o9[FEi<RlD3iS0
+r1
+!s85 0
+!i10b 1
+!s100 LXGTTeX8d8WQS3l:Ml;iG0
+Ijid65Jk9o9[FEi<RlD3iS0
+!i103 1
+S1
+R0
+R7
+R53
+R54
+R27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_if_stage
+R1
+R2
+R3
+DXx4 work 22 riscv_if_stage_sv_unit 0 22 bV3C78kI8G=amdGY`GL9Q0
+R5
+r1
+!s85 0
+!i10b 1
+!s100 zT3_9N:T2e9UTNQj0`GM?3
+IMUk=AOKRcUnM>DX@:nM>C3
+!s105 riscv_if_stage_sv_unit
+S1
+R0
+R7
+Z55 8../ips/riscv/./rtl/riscv_if_stage.sv
+Z56 F../ips/riscv/./rtl/riscv_if_stage.sv
+R24
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_if_stage_sv_unit
+R1
+R2
+R3
+VbV3C78kI8G=amdGY`GL9Q0
+r1
+!s85 0
+!i10b 1
+!s100 fz`DNEFABY[ZKe2:T1VeN1
+IbV3C78kI8G=amdGY`GL9Q0
+!i103 1
+S1
+R0
+R7
+R55
+R56
+R30
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_int_controller
+R1
+R2
+R3
+DXx4 work 28 riscv_int_controller_sv_unit 0 22 ;lFNhLnN7UhVeKVNzH[mi1
+R5
+r1
+!s85 0
+!i10b 1
+!s100 1nW9P]<bhe7CQ[g:>SQ]I0
+IWz?H1B8fjH4<k;OHg;>aa1
+!s105 riscv_int_controller_sv_unit
+S1
+R0
+R7
+Z57 8../ips/riscv/./rtl/riscv_int_controller.sv
+Z58 F../ips/riscv/./rtl/riscv_int_controller.sv
+R29
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_int_controller_sv_unit
+R1
+R2
+R3
+V;lFNhLnN7UhVeKVNzH[mi1
+r1
+!s85 0
+!i10b 1
+!s100 ZmabQMGV8mDS79K;07[1L0
+I;lFNhLnN7UhVeKVNzH[mi1
+!i103 1
+S1
+R0
+R7
+R57
+R58
+L0 24
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_L0_buffer
+R1
+R17
+!i10b 1
+!s100 0f:7:TGjPO<aJTE3[Jh:n0
+I;CeZ3a8ccQ<><^3k`CCgY1
+R5
+!s105 riscv_L0_buffer_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_L0_buffer.sv
+F../ips/riscv/./rtl/riscv_L0_buffer.sv
+L0 11
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+nriscv_@l0_buffer
+vriscv_load_store_unit
+R1
+R17
+!i10b 1
+!s100 ^fQ`PaI<_VmUb38H[gV3C3
+IE`kRP7Z8Z8^U4<l4TIXRO3
+R5
+!s105 riscv_load_store_unit_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_load_store_unit.sv
+F../ips/riscv/./rtl/riscv_load_store_unit.sv
+R34
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_mult
+R1
+R2
+R3
+DXx4 work 18 riscv_mult_sv_unit 0 22 [Dc`?J9OQ2H784i_A]5=L1
+R5
+r1
+!s85 0
+!i10b 1
+!s100 ^4I=XUneF:KklTgIb3J`h1
+IBjWLP[L9kNXia@aKl52J@2
+!s105 riscv_mult_sv_unit
+S1
+R0
+R7
+Z59 8../ips/riscv/./rtl/riscv_mult.sv
+Z60 F../ips/riscv/./rtl/riscv_mult.sv
+R27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_mult_sv_unit
+R1
+R2
+R3
+V[Dc`?J9OQ2H784i_A]5=L1
+r1
+!s85 0
+!i10b 1
+!s100 bcnCjQhD`bce<E8Z]TEfz0
+I[Dc`?J9OQ2H784i_A]5=L1
+!i103 1
+S1
+R0
+R7
+R59
+R60
+R28
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_perturbation
+R1
+R2
+R3
+DXx4 work 26 riscv_perturbation_sv_unit 0 22 XdRaO@k9XhCH@8;KWFE743
+R5
+r1
+!s85 0
+!i10b 1
+!s100 6MB2TR=Wz0`7EUaV68P>G3
+ISZe7Yc83DIa?n9C0T8eiL3
+!s105 riscv_perturbation_sv_unit
+S1
+R0
+R7
+Z61 8../ips/riscv/tb/tb_riscv/riscv_perturbation.sv
+Z62 F../ips/riscv/tb/tb_riscv/riscv_perturbation.sv
+R28
+R10
+31
+R11
+Z63 !s107 ../ips/riscv/rtl/include/riscv_config.sv|../ips/riscv/tb/tb_riscv/riscv_random_stall.sv|../ips/riscv/tb/tb_riscv/riscv_random_interrupt_generator.sv|../ips/riscv/tb/tb_riscv/riscv_perturbation.sv|../ips/riscv/tb/tb_riscv/tb_riscv_core.sv|../ips/riscv/tb/tb_riscv/riscv_simchecker.sv|../ips/riscv/tb/tb_riscv/include/perturbation_defines.sv|
+R18
+!i113 0
+R19
+R20
+R16
+Xriscv_perturbation_sv_unit
+R1
+R2
+R3
+VXdRaO@k9XhCH@8;KWFE743
+r1
+!s85 0
+!i10b 1
+!s100 =@]RW^1j?bYD2Kj4^j6GT3
+IXdRaO@k9XhCH@8;KWFE743
+!i103 1
+S1
+R0
+R7
+R61
+R62
+Z64 F../ips/riscv/rtl/include/riscv_config.sv
+R52
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+vriscv_pmp
+R1
+R2
+R3
+DXx4 work 17 riscv_pmp_sv_unit 0 22 P0ckU5b6QSJ0m4JGOg11Q0
+R5
+r1
+!s85 0
+!i10b 1
+!s100 Q42RZ@9n3J7`^om58]T9B0
+IJC<JnTL;=X8YcHLE5N;O]1
+!s105 riscv_pmp_sv_unit
+S1
+R0
+R7
+Z65 8../ips/riscv/./rtl/riscv_pmp.sv
+Z66 F../ips/riscv/./rtl/riscv_pmp.sv
+L0 106
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_pmp_sv_unit
+R1
+R2
+R3
+VP0ckU5b6QSJ0m4JGOg11Q0
+r1
+!s85 0
+!i10b 1
+!s100 o>U2Ba;e9X]67GR;6cNI91
+IP0ckU5b6QSJ0m4JGOg11Q0
+!i103 1
+S1
+R0
+R7
+R65
+R66
+L0 104
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_prefetch_buffer
+R1
+R17
+!i10b 1
+!s100 CD]XPCcoPScMUPl=WaSoE1
+IfA5G@^3SLK71X=^>^b8Z:2
+R5
+!s105 riscv_prefetch_buffer_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_prefetch_buffer.sv
+F../ips/riscv/./rtl/riscv_prefetch_buffer.sv
+R34
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+vriscv_prefetch_L0_buffer
+R1
+R17
+!i10b 1
+!s100 g9k6Ll2AE8Af6G4FaU]WQ1
+I8h4e68?k:0agQM?6BndaD2
+R5
+!s105 riscv_prefetch_L0_buffer_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_prefetch_L0_buffer.sv
+F../ips/riscv/./rtl/riscv_prefetch_L0_buffer.sv
+R29
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+nriscv_prefetch_@l0_buffer
+vriscv_random_interrupt_generator
+R1
+R2
+R3
+Z67 DXx4 work 20 perturbation_defines 0 22 WTC97QCCXk<olD14AMRgf3
+DXx4 work 40 riscv_random_interrupt_generator_sv_unit 0 22 iA9:W`iaVnXbQ^1ZhVg]P0
+R5
+r1
+!s85 0
+!i10b 1
+!s100 g3]I95oM_1LEY<_mK4?L<1
+I5QFSC:K`iCGo8l:L6Z10`1
+!s105 riscv_random_interrupt_generator_sv_unit
+S1
+R0
+R7
+Z68 8../ips/riscv/tb/tb_riscv/riscv_random_interrupt_generator.sv
+Z69 F../ips/riscv/tb/tb_riscv/riscv_random_interrupt_generator.sv
+R27
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+Xriscv_random_interrupt_generator_sv_unit
+R1
+R2
+R3
+R67
+ViA9:W`iaVnXbQ^1ZhVg]P0
+r1
+!s85 0
+!i10b 1
+!s100 oNQToQBhzI3cH;nUdAASA2
+IiA9:W`iaVnXbQ^1ZhVg]P0
+!i103 1
+S1
+R0
+R7
+R68
+R69
+R64
+R29
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+vriscv_random_stall
+R1
+R2
+R3
+R67
+DXx4 work 26 riscv_random_stall_sv_unit 0 22 f8JZzibk^WZUK=`g5hf9`3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 F]S12n47QKeScMg>hM>G40
+I`7JWW>@IO_i8?;Ka]CV1]2
+!s105 riscv_random_stall_sv_unit
+S1
+R0
+R7
+Z70 8../ips/riscv/tb/tb_riscv/riscv_random_stall.sv
+Z71 F../ips/riscv/tb/tb_riscv/riscv_random_stall.sv
+R30
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+Xriscv_random_stall_sv_unit
+R1
+R2
+R3
+R67
+Vf8JZzibk^WZUK=`g5hf9`3
+r1
+!s85 0
+!i10b 1
+!s100 3E6ZOVC[Xd_NFlj1an0Z`0
+If8JZzibk^WZUK=`g5hf9`3
+!i103 1
+S1
+R0
+R7
+R70
+R71
+R64
+R52
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+vriscv_register_file
+R1
+R17
+!i10b 1
+!s100 27d4NT2RKl_<8;0AWT=_W2
+I=_]5UEmZ8]VFWbMkmkDh^2
+R5
+!s105 riscv_register_file_latch_sv_unit
+S1
+R0
+R7
+8../ips/riscv/./rtl/riscv_register_file_latch.sv
+F../ips/riscv/./rtl/riscv_register_file_latch.sv
+R41
+R10
+r1
+!s85 0
+31
+R11
+R21
+R22
+!i113 0
+R19
+R23
+R16
+vriscv_simchecker
+R1
+R2
+R3
+DXx4 work 24 riscv_simchecker_sv_unit 0 22 ReOf1=WnQC:Q1:U`^fY>J3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 @BcgH>Mo1g`:<fRi:gPCd1
+I6D?iSG1QI<]W9]k^=eI:@0
+!s105 riscv_simchecker_sv_unit
+S1
+R0
+R7
+Z72 8../ips/riscv/tb/tb_riscv/riscv_simchecker.sv
+Z73 F../ips/riscv/tb/tb_riscv/riscv_simchecker.sv
+R46
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+Xriscv_simchecker_sv_unit
+R1
+R2
+R3
+VReOf1=WnQC:Q1:U`^fY>J3
+r1
+!s85 0
+!i10b 1
+!s100 W3`d=NUIH<Z8]_i0V9IGf0
+IReOf1=WnQC:Q1:U`^fY>J3
+!i103 1
+S1
+R0
+R7
+R72
+R73
+R64
+R34
+R10
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
+vriscv_tracer
+R1
+R2
+R3
+Z74 DXx4 work 20 riscv_tracer_defines 0 22 ERMW]5?RLnEA3Ke>kKATG0
+DXx4 work 20 riscv_tracer_sv_unit 0 22 ^gE89]0FV[eMgRP_K?kNF3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 V:fB0W0J[ocf>0@0@aoTg3
+IiIzHeQ>nEQ[m3^PBFB0V13
+!s105 riscv_tracer_sv_unit
+S1
+R0
+R7
+Z75 8../ips/riscv/./rtl/riscv_tracer.sv
+Z76 F../ips/riscv/./rtl/riscv_tracer.sv
+R46
+R10
+31
+R11
+Z77 !s107 ../ips/riscv/./rtl/riscv_tracer.sv|
+Z78 !s90 -quiet|-sv|-work|/home/sumanth/shivam/pulp/pulpissimo/install/modelsim_libs/riscv_lib|-suppress|2583|-suppress|13314|+incdir+../ips/riscv/./rtl/include|../ips/riscv/./rtl/riscv_tracer.sv|
+!i113 0
+R19
+R23
+R16
+Xriscv_tracer_defines
+R1
+R2
+R3
+R17
+!i10b 1
+!s100 M^m96UZ1<?Jl3hWn=_5jD2
+IERMW]5?RLnEA3Ke>kKATG0
+VERMW]5?RLnEA3Ke>kKATG0
+S1
+R0
+R7
+8../ips/riscv/./rtl/include/riscv_tracer_defines.sv
+F../ips/riscv/./rtl/include/riscv_tracer_defines.sv
+L0 12
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R16
+Xriscv_tracer_sv_unit
+R1
+R2
+R3
+R74
+V^gE89]0FV[eMgRP_K?kNF3
+r1
+!s85 0
+!i10b 1
+!s100 ;O@0>aZW184eD]2iCkJ7o1
+I^gE89]0FV[eMgRP_K?kNF3
+!i103 1
+S1
+R0
+R7
+R75
+R76
+R34
+R10
+31
+R11
+R77
+R78
+!i113 0
+R19
+R23
+R16
+vtb_riscv_core
+R1
+R17
+!i10b 1
+!s100 jDM8V1oI>SUd`UzFG2j:E3
+Ifl[Dnkdk[K4OefkIaV`>V1
+R5
+!s105 tb_riscv_core_sv_unit
+S1
+R0
+R7
+8../ips/riscv/tb/tb_riscv/tb_riscv_core.sv
+F../ips/riscv/tb/tb_riscv/tb_riscv_core.sv
+R24
+R10
+r1
+!s85 0
+31
+R11
+R63
+R18
+!i113 0
+R19
+R20
+R16
