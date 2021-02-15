@@ -1,0 +1,142 @@
+[
+	{
+		"path": "$ROOTPATH$/ips/riscv/rtl/riscv_controller.sv",
+		"bookmarks": [
+			{
+				"line": 933,
+				"column": 9,
+				"label": "FSM for DBG_TAKEN in IF"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/pulp-runtime/pulp-runtime-examples/hello/dumps/bootcode/boot_code.hex",
+		"bookmarks": [
+			{
+				"line": 32,
+				"column": 3,
+				"label": "this is the first instr in trace"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/pulp-runtime/pulp-runtime-examples/hello/dumps/bootcode/boot_code_dump",
+		"bookmarks": [
+			{
+				"line": 39,
+				"column": 12,
+				"label": "first instruction in tracer"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/ips/riscv-dbg/debug_rom/debug_rom.h",
+		"bookmarks": [
+			{
+				"line": 10,
+				"column": 12,
+				"label": "this in trace"
+			},
+			{
+				"line": 13,
+				"column": 7,
+				"label": "upto this in trace"
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/pulp-runtime/pulp-runtime-examples/hello/trace_core_1f_0.log",
+		"bookmarks": [
+			{
+				"line": 3,
+				"column": 28,
+				"label": "bootROM start"
+			},
+			{
+				"line": 23,
+				"column": 28,
+				"label": "bootROM end"
+			},
+			{
+				"line": 25,
+				"column": 35,
+				"label": "DebugROM (DMHaltAddr) (entry)"
+			},
+			{
+				"line": 27,
+				"column": 62,
+				"label": "_entry"
+			},
+			{
+				"line": 35,
+				"column": 48,
+				"label": "entry_loop - 11 iters"
+			},
+			{
+				"line": 172,
+				"column": 45,
+				"label": "exit entry_loop (11 iters), branch to going"
+			},
+			{
+				"line": 177,
+				"column": 80,
+				"label": "jump to whereto"
+			},
+			{
+				"line": 179,
+				"column": 37,
+				"label": "WhereTo in DebugROM memmap"
+			},
+			{
+				"line": 6979,
+				"column": 54,
+				"label": "entry_loop 564 iters end"
+			},
+			{
+				"line": 6995,
+				"column": 47,
+				"label": "4 instr loop - 9 iters"
+			},
+			{
+				"line": 7019,
+				"column": 46,
+				"label": "4 instr loop ends"
+			},
+			{
+				"line": 7189,
+				"column": 46,
+				"label": "internal branch"
+			},
+			{
+				"line": 7192,
+				"column": 45,
+				"label": "internal jump"
+			},
+			{
+				"line": 7211,
+				"column": 47,
+				"label": "internal branch"
+			},
+			{
+				"line": 7214,
+				"column": 47,
+				"label": "internal jump"
+			},
+			{
+				"line": 7232,
+				"column": 68,
+				"label": "load pos_init_start address (for jump from pos_alloc_init)"
+			},
+			{
+				"line": 7239,
+				"column": 80,
+				"label": ""
+			},
+			{
+				"line": 7253,
+				"column": 71,
+				"label": "internal branch"
+			}
+		]
+	}
+]
