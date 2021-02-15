@@ -73,7 +73,10 @@ module xilinx_pulpissimo
    input wire  pad_jtag_tck,
    input wire  pad_jtag_tdi,
    output wire pad_jtag_tdo,
-   input wire  pad_jtag_tms
+   input wire  pad_jtag_tms,
+   inout wire  monitor_alert_int_o
+   // Shivam
+   //input wire  monitor_clk
    //input wire  pad_jtag_trst
  );
 
@@ -83,6 +86,7 @@ module xilinx_pulpissimo
 
   wire        ref_clk;
   wire        tck_int;
+  //wire        pad_spclk_in;
   //wire        pad_spim_sck;
 
   // Input clock buffer
@@ -95,6 +99,17 @@ module xilinx_pulpissimo
      .I(sys_clk),
      .O(ref_clk)
      );
+
+  // Shivam
+  // IBUFG
+  //   #(
+  //     .IOSTANDARD("LVCMOS33"),
+  //     .IBUF_LOW_PWR("FALSE"))
+  // i_spclk_iobuf
+  //   (
+  //    .I(monitor_clk),
+  //    .O(pad_spclk_in)
+  //    );
 
 	//JTAG TCK clock buffer (dedicated route is false in constraints)
 	IBUF i_tck_iobuf (
@@ -175,7 +190,10 @@ module xilinx_pulpissimo
        //.pad_jtag_trst(pad_jtag_trst),
 			 .pad_jtag_trst(1'b1),
        .pad_xtal_in(ref_clk),
-       .pad_bootsel()
+       .pad_bootsel(),
+       // Shivam
+       .monitor_alert_int_o(monitor_alert_int_o),
+       .pad_spclk_in(0)
        );
 
 endmodule

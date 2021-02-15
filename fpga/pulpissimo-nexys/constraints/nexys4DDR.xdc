@@ -25,6 +25,7 @@
 
 #Create constraint for the clock input of the nexys board
 create_clock -period 10.000 -name ref_clk [get_ports sys_clk]
+#create_clock -period 50.000 -name sp_clk  [get_ports monitor_clk]
 
 #I2S and CAM interface are not used in this FPGA port. Set constraints to
 #disable the clock
@@ -78,6 +79,10 @@ set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins i_pulpis
 # Create asynchronous clock group between JTAG TCK and SoC clock.
 set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins i_pulpissimo/pad_jtag_tck]] -group [get_clocks -of_objects [get_pins i_pulpissimo/soc_domain_i/pulp_soc_i/i_clk_rst_gen/clk_soc_o]]
 
+# // Shivam
+# Sync Monitor clock and SoC clock
+set_clock_groups -asynchronous -group [get_clocks -of_objects [get_pins i_pulpissimo/soc_domain_i/pulp_soc_i/i_clk_rst_gen/clk_monitor_o]] -group [get_clocks -of_objects [get_pins i_pulpissimo/soc_domain_i/pulp_soc_i/i_clk_rst_gen/clk_soc_o]]
+
 #############################################################
 #  _____ ____         _____      _   _   _                  #
 # |_   _/ __ \       / ____|    | | | | (_)                 #
@@ -126,6 +131,7 @@ set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports led0_o]
 set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports led1_o]
 set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports led2_o]
 set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports led3_o]
+set_property -dict {PACKAGE_PIN V11 IOSTANDARD LVCMOS33} [get_ports monitor_alert_int_o]
 
 ## Switches
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports switch0_i]

@@ -28,6 +28,8 @@ module fpga_clk_gen (
                      output logic        soc_clk_o,
                      output logic        per_clk_o,
                      output logic        cluster_clk_o,
+                     // Shivam
+                     output logic        monitor_clk_o,
                      output logic        soc_cfg_lock_o,
                      input logic         soc_cfg_req_i,
                      output logic        soc_cfg_ack_o,
@@ -59,6 +61,7 @@ module fpga_clk_gen (
      .clk_in1(ref_clk_i),
      .clk_out1(soc_clk_o),
      .clk_out2(per_clk_o),
+     .clk_out3(monitor_clk_o),
      .locked(s_locked)
      );
 

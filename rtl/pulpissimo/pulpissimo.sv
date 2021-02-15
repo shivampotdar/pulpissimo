@@ -62,7 +62,13 @@ module pulpissimo #(
   inout wire pad_jtag_tms,
   inout wire pad_jtag_trst,
 
-  inout wire pad_xtal_in
+  inout wire pad_xtal_in,
+  inout wire pad_spclk_in,
+  inout wire monitor_alert_int_o
+
+  // output logic [31:0] monitor_pc_id,
+  // output logic        monitor_new_pc,
+  // input  logic        monitor_alert_int
 );
 
   localparam AXI_ADDR_WIDTH             = 32;
@@ -369,6 +375,30 @@ module pulpissimo #(
   logic                        s_bootsel;
   logic                        s_fc_fetch_en_valid;
   logic                        s_fc_fetch_en;
+
+  // Shivam
+  // logic                        monitor_clk_in;
+  // `ifndef PULP_FPGA_EMUL
+  //   assign monitor_clk_in = pad_spclk_in;
+  // `else
+  //   assign monitor_clk_in = 0;
+    // fpga_slow_clk_gen #(
+    //   .CLK_DIV_VALUE(5)
+    // ) clk_div_monitor(
+    //   .ref_clk_i              ( pad_spclk_in          ),
+    //   .rst_ni                 ( s_rst_n               ),
+    //   .slow_clk_o             ( monitor_clk_in        )
+    // );
+    // clk_div #(
+    //   .RATIO(5)
+    // ) clk_div_monitor (
+    //   .clk_i               ( pad_spclk_in           ),
+    //   .rst_ni              ( s_rst_n                ),    
+    //   .testmode_i          ( 1'b0                   ),
+    //   .en_i                ( 1'b1                   ),
+    //   .clk_o               ( monitor_clk_in         )
+    // );
+  // `endif
 
   //
   // PAD FRAME
@@ -927,6 +957,9 @@ module pulpissimo #(
         .cluster_boot_addr_o          (                                  ),
         .cluster_test_en_o            (                                  ),
         .cluster_dbg_irq_valid_o      (                                  ), // we dont' have a cluster
+        // Shivam
+        .pad_spclk_in                 ( pad_spclk_in                     ),
+        .monitor_alert_int_o          ( monitor_alert_int_o              ),
         .*
     );
 

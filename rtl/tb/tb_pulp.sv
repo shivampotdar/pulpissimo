@@ -19,6 +19,23 @@
 // timeunit 1ps;
 // timeprecision 1ps;
 
+module tb_clk_gen_sp #(
+   parameter CLK_PERIOD = 1.0
+) (
+   output logic   clk_o
+);
+
+   initial
+   begin
+      clk_o  = 1'b1;
+
+      #(51652.036ns);
+
+      forever clk_o = #(CLK_PERIOD/2) ~clk_o;
+   end
+
+endmodule
+
 `define EXIT_SUCCESS  0
 `define EXIT_FAIL     1
 `define EXIT_ERROR   -1
@@ -206,7 +223,8 @@ module tb_pulp;
    logic                tmp_tdo;
    logic                tmp_bridge_tdo;
 
-
+   // Shivam
+   //logic                monitor_alert_int;
 
    wire w_master_i2s_sck;
    wire w_master_i2s_ws ;
@@ -294,8 +312,7 @@ module tb_pulp;
    endgenerate
    `endif
 
-
-
+   
    pullup sda0_pullup_i (w_i2c0_sda);
    pullup scl0_pullup_i (w_i2c0_scl);
 
@@ -532,6 +549,9 @@ module tb_pulp;
         .exit                 ( sim_jtag_exit        )
     );
 
+   // Shivam
+   wire s_clk_sp_ref, s_clk_sp_ref_half;
+   wire monitor_alert_int_o;
 
    // PULPissimo chip (design under test)
    pulpissimo #(
@@ -586,14 +606,31 @@ module tb_pulp;
       .pad_jtag_tms       ( w_tms              ),
       .pad_jtag_trst      ( w_trstn            ),
 
-      .pad_xtal_in        ( w_clk_ref          )
+      .pad_xtal_in        ( w_clk_ref          ),
+      // Shivam
+      .pad_spclk_in       ( s_clk_sp_ref_half  ),
+      .monitor_alert_int_o( monitor_alert_int_o)
+
+      //.monitor_alert_int  ( monitor_alert_int  )
    );
 
    tb_clk_gen #( .CLK_PERIOD(REF_CLK_PERIOD) ) i_ref_clk_gen (.clk_o(s_clk_ref) );
+   // Shivam
+   //tb_clk_gen_sp #( .CLK_PERIOD(49.877249694ns)) i_test_sp_clk (.clk_o(s_clk_sp_ref));
+   tb_clk_gen_sp #( .CLK_PERIOD(56.831249694ns)) i_test_sp_clk (.clk_o(s_clk_sp_ref));
+   tb_clk_gen_sp #( .CLK_PERIOD(28.415624847ns)) i_test_sp_clk_half (.clk_o(s_clk_sp_ref_half));
 
     initial begin: timing_format
         $timeformat(-9, 0, "ns", 9);
     end: timing_format
+
+   // Shivam
+   always_comb begin
+      if(i_dut.soc_domain_i.pulp_soc_i.monitor_alert_int == 1'b1) begin
+         $display("Monitor Alert Caught!!!");
+      end
+
+   end
 
    // testbench driver process
    initial
@@ -611,6 +648,7 @@ module tb_pulp;
 
          error   = 1'b0;
          num_err = 0;
+         //assign monitor_alert_int = 1'b0;
 
          // read entry point from commandline
          if ($value$plusargs("ENTRY_POINT=%h", entry_point))
@@ -780,6 +818,9 @@ module tb_pulp;
 
 
             #500us;
+            // #300us;
+            //assign monitor_alert_int = 1'b1;
+            // #200us;
 
             // Select UART driver/monitor
             if ($value$plusargs("uart_drv_mon=%s", uart_drv_mon_sel)) begin

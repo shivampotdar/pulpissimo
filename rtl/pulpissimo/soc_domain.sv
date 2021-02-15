@@ -237,7 +237,14 @@ module soc_domain #(
     input  logic [1:0]                       data_master_b_resp_i,
     input  logic [AXI_ID_OUT_WIDTH-1:0]      data_master_b_id_i,
     input  logic [AXI_USER_WIDTH-1:0]        data_master_b_user_i,
-    output logic [7:0]                       data_master_b_readpointer_o
+    output logic [7:0]                       data_master_b_readpointer_o,
+
+    // Shivam
+    input  logic                             pad_spclk_in,
+    output logic                             monitor_alert_int_o
+    // output logic [31:0]                      monitor_pc_id,
+    // output logic                             monitor_new_pc,
+    // input  logic                             monitor_alert_int
 );
 
 
@@ -435,7 +442,14 @@ module soc_domain #(
         .jtag_tck_i                  (jtag_tck_i),
         .jtag_trst_ni                (jtag_trst_ni),
         .jtag_tms_i                  (jtag_tms_i),
-        .jtag_tdi_i                  (jtag_tdi_i)
+        .jtag_tdi_i                  (jtag_tdi_i),
+        // Shivam
+        .pad_spclk_in                (pad_spclk_in),
+        .monitor_alert_int_o         (monitor_alert_int_o)
+
+        // .monitor_pc_id               (monitor_pc_id),
+        // .monitor_new_pc              (monitor_new_pc),
+        // .monitor_alert_int           (monitor_alert_int)
      );
 
 endmodule
