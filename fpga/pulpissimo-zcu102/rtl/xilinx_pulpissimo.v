@@ -70,7 +70,11 @@ module xilinx_pulpissimo
    input wire  pad_jtag_tdi,
    output wire pad_jtag_tdo,
    input wire  pad_jtag_tms,
-   inout wire  monitor_alert_int_o 
+   inout wire  monitor_alert_int_o,
+   inout wire  hash_match_o,
+   inout wire  monitor_new_pc_o,
+
+   inout wire  fix_that_bootsel
  );
 
   localparam CORE_TYPE = 0; // 0 for RISCY, 1 for ZERORISCY, 2 for MICRORISCY
@@ -138,10 +142,13 @@ module xilinx_pulpissimo
        .pad_jtag_tms(pad_jtag_tms),
        .pad_jtag_trst(1'b1),
        .pad_xtal_in(ref_clk),
-       .pad_bootsel(),
+       .pad_bootsel(fix_that_bootsel),
        // Shivam
        .monitor_alert_int_o(monitor_alert_int_o),
-       .pad_spclk_in(0)
+       .pad_spclk_in(0),
+       // DEBUG
+       .hash_match_o(hash_match_o),
+       .monitor_new_pc_o(monitor_new_pc_o)
        );
 
 endmodule

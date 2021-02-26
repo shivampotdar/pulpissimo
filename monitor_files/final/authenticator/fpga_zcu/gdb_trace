@@ -1,0 +1,673 @@
+(gdb) def fn
+Type commands for definition of "fn".
+End with a line saying just "end".
+>stepi
+>monitor reg pc
+>end
+(gdb) fn
+0x1a000080 in ?? ()
+pc (/32): 0x1A000080
+(gdb) load
+Loading section .init_array, size 0xc lma 0x1c000004
+Loading section .fini_array, size 0xc lma 0x1c000010
+Loading section .rodata, size 0x160 lma 0x1c00001c
+Loading section .vectors, size 0xc0 lma 0x1c008000
+Loading section .text, size 0x5e0 lma 0x1c0080c0
+Loading section .l2_data, size 0x4 lma 0x1c010000
+Start address 0x1c008080, load size 2076
+Transfer rate: 16 KB/sec, 346 bytes/write.
+(gdb) 
+(gdb) fn
+pos_init_entry () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/crt0.S:51
+51	    la      t0, _bss_start
+pc (/32): 0x1C0080C0
+(gdb) fn
+0x1c0080c4	51	    la      t0, _bss_start
+pc (/32): 0x1C0080C4
+(gdb) fn
+52	    la      t1, _bss_end
+pc (/32): 0x1C0080C8
+(gdb) 
+0x1c0080cc	52	    la      t1, _bss_end
+pc (/32): 0x1C0080CC
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+54	    sw      zero,0(t0)
+pc (/32): 0x1C0080D0
+(gdb) 
+55	    addi    t0, t0, 4
+pc (/32): 0x1C0080D4
+(gdb) 
+56	    bltu    t0, t1, 1b
+pc (/32): 0x1C0080D8
+(gdb) 
+61	    la   x2, stack
+pc (/32): 0x1C0080DC
+(gdb) 
+0x1c0080e0 in pos_init_entry () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/crt0.S:61
+61	    la   x2, stack
+pc (/32): 0x1C0080E0
+(gdb) 
+pos_init_entry () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/crt0.S:66
+66	    jal  x1, pos_init_start
+pc (/32): 0x1C0080E4
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:55
+55	{
+pc (/32): 0x1C0083B4
+(gdb) 
+0x1c0083b8	55	{
+pc (/32): 0x1C0083B8
+(gdb) 
+0x1c0083bc	55	{
+pc (/32): 0x1C0083BC
+(gdb) 
+62	  pos_soc_init();
+pc (/32): 0x1C0083C0
+(gdb) 
+pos_soc_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/chips/pulpissimo/soc.c:31
+31	  pos_freq_domains[PI_FREQ_DOMAIN_FC] = ARCHI_FPGA_FC_FREQUENCY;
+pc (/32): 0x1C008224
+(gdb) 
+0x1c008228	31	  pos_freq_domains[PI_FREQ_DOMAIN_FC] = ARCHI_FPGA_FC_FREQUENCY;
+pc (/32): 0x1C008228
+(gdb) 
+0x1c00822c	31	  pos_freq_domains[PI_FREQ_DOMAIN_FC] = ARCHI_FPGA_FC_FREQUENCY;
+pc (/32): 0x1C00822C
+(gdb) 
+0x1c008230	31	  pos_freq_domains[PI_FREQ_DOMAIN_FC] = ARCHI_FPGA_FC_FREQUENCY;
+pc (/32): 0x1C008230
+(gdb) 
+33	  pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] = ARCHI_FPGA_FREQUENCY;
+pc (/32): 0x1C008234
+(gdb) 
+0x1c008238	33	  pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] = ARCHI_FPGA_FREQUENCY;
+pc (/32): 0x1C008238
+(gdb) 
+0x1c00823c	33	  pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] = ARCHI_FPGA_FREQUENCY;
+pc (/32): 0x1C00823C
+(gdb) 
+0x1c008240	33	  pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] = ARCHI_FPGA_FREQUENCY;
+pc (/32): 0x1C008240
+(gdb) 
+36	}
+pc (/32): 0x1C008244
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:64
+64	  pos_irq_init();
+pc (/32): 0x1C0083C4
+(gdb) 
+hal_itc_enable_clr (mask=4294967295) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/itc/itc_v1.h:38
+38	  pulp_write32(ARCHI_FC_ITC_ADDR + ITC_MASK_CLR_OFFSET, mask);
+pc (/32): 0x1C008518
+(gdb) 
+0x1c00851c	38	  pulp_write32(ARCHI_FC_ITC_ADDR + ITC_MASK_CLR_OFFSET, mask);
+pc (/32): 0x1C00851C
+(gdb) 
+0x1c008520	38	  pulp_write32(ARCHI_FC_ITC_ADDR + ITC_MASK_CLR_OFFSET, mask);
+pc (/32): 0x1C008520
+(gdb) 
+cluster_id () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/riscv/riscv_v5.h:154
+154	  asm("csrr %0, 0xF14" : "=r" (hart_id) : );
+pc (/32): 0x1C008524
+(gdb) 
+160	  return (hart_id >> 5) & 0x3f;
+pc (/32): 0x1C008528
+(gdb) 
+rt_irq_set_fc_vector_base (base=<optimized out>) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/irq.h:136
+136	    if (hal_is_fc())
+pc (/32): 0x1C00852C
+(gdb) 
+0x1c008530	136	    if (hal_is_fc())
+pc (/32): 0x1C008530
+(gdb) 
+143	        __builtin_pulp_spr_write(SR_MTVEC, base | 1);
+pc (/32): 0x1C008538
+(gdb) 
+0x1c00853c	143	        __builtin_pulp_spr_write(SR_MTVEC, base | 1);
+pc (/32): 0x1C00853C
+(gdb) 
+0x1c008540	143	        __builtin_pulp_spr_write(SR_MTVEC, base | 1);
+pc (/32): 0x1C008540
+(gdb) 
+0x1c008544	143	        __builtin_pulp_spr_write(SR_MTVEC, base | 1);
+pc (/32): 0x1C008544
+(gdb) 
+pos_irq_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/irq.c:92
+92	}
+pc (/32): 0x1C008548
+(gdb) 
+92	}
+pc (/32): 0x1C008534
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:66
+66	  pos_soc_event_init();
+pc (/32): 0x1C0083C8
+(gdb) 
+soc_eu_eventMask_set (value=4294967295, reg=4) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:30
+30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C00854C
+(gdb) 
+0x1c008550	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008550
+(gdb) 
+0x1c008554	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008554
+(gdb) 
+0x1c008558	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008558
+(gdb) 
+0x1c00855c	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C00855C
+(gdb) 
+0x1c008560	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008560
+(gdb) 
+0x1c008564	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008564
+(gdb) 
+0x1c008568	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008568
+(gdb) 
+0x1c00856c	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C00856C
+(gdb) 
+0x1c008570	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008570
+(gdb) 
+0x1c008574	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008574
+(gdb) 
+0x1c008578	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008578
+(gdb) 
+0x1c00857c	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C00857C
+(gdb) 
+0x1c008580	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008580
+(gdb) 
+0x1c008584	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008584
+(gdb) 
+0x1c008588	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008588
+(gdb) 
+0x1c00858c	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C00858C
+(gdb) 
+0x1c008590	30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C008590
+(gdb) 
+pos_soc_event_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/soc_event.c:36
+36	}pc (/32): 0x1C008594
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:72
+72	  pos_allocs_init();
+pc (/32): 0x1C0083CC
+(gdb) 
+pos_allocs_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc_pool.c:47
+47	{
+pc (/32): 0x1C008470
+(gdb) 
+0x1c008474	47	{
+pc (/32): 0x1C008474
+(gdb) 
+pos_l2_priv0_base () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:41
+41	  if ((int)&__l2_priv0_end >= ARCHI_L2_PRIV1_ADDR)
+pc (/32): 0x1C008478
+(gdb) 
+0x1c00847c	41	  if ((int)&__l2_priv0_end >= ARCHI_L2_PRIV1_ADDR)
+pc (/32): 0x1C00847C
+(gdb) 
+0x1c008480	41	  if ((int)&__l2_priv0_end >= ARCHI_L2_PRIV1_ADDR)
+pc (/32): 0x1C008480
+(gdb) 
+0x1c008484	41	  if ((int)&__l2_priv0_end >= ARCHI_L2_PRIV1_ADDR)
+pc (/32): 0x1C008484
+(gdb) 
+pos_l2_priv0_size () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:51
+51	    return ARCHI_L2_PRIV1_ADDR - (int)&__l2_priv0_end;
+pc (/32): 0x1C0084B8
+(gdb) 
+0x1c0084bc	51	    return ARCHI_L2_PRIV1_ADDR - (int)&__l2_priv0_end;
+pc (/32): 0x1C0084BC
+(gdb) 
+pos_l2_priv0_base () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:44
+44	    return (void *)&__l2_priv0_end;
+pc (/32): 0x1C0084C0
+(gdb) 
+0x1c0084c4	44	    return (void *)&__l2_priv0_end;
+pc (/32): 0x1C0084C4
+(gdb) 
+0x1c0084c8	44	    return (void *)&__l2_priv0_end;
+pc (/32): 0x1C0084C8
+(gdb) 
+pos_allocs_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc_pool.c:53
+53	    pos_alloc_init(&pos_alloc_l2[0], pos_l2_priv0_base(), pos_l2_priv0_size());
+pc (/32): 0x1C008490
+(gdb) 
+0x1c008494	53	    pos_alloc_init(&pos_alloc_l2[0], pos_l2_priv0_base(), pos_l2_priv0_size());
+pc (/32): 0x1C008494
+(gdb) 
+0x1c008498	53	    pos_alloc_init(&pos_alloc_l2[0], pos_l2_priv0_base(), pos_l2_priv0_size());
+pc (/32): 0x1C008498
+(gdb) 
+pos_alloc_init (a=a@entry=0x1c000990 <pos_alloc_l2>, _chunk=0x1c00099c, size=30308) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc.c:180
+180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008448
+(gdb) 
+0x1c00844c	180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C00844C
+(gdb) 
+184	    a->first_free = chunk;
+pc (/32): 0x1C008450
+(gdb) 
+185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008454
+(gdb) 
+0x1c008458	185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008458
+(gdb) 
+186	    if (size > 0)
+pc (/32): 0x1C00845C
+(gdb) 
+188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008460
+(gdb) 
+0x1c008464	188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008464
+(gdb) 
+189	        chunk->next = NULL;
+pc (/32): 0x1C008468
+(gdb) 
+191	}
+pc (/32): 0x1C00846C
+(gdb) 
+pos_l2_priv1_base () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:55
+55	  if ((int)&__l2_priv1_end >= ARCHI_L2_SHARED_ADDR)
+pc (/32): 0x1C00849C
+(gdb) 
+0x1c0084a0	55	  if ((int)&__l2_priv1_end >= ARCHI_L2_SHARED_ADDR)
+pc (/32): 0x1C0084A0
+(gdb) 
+0x1c0084a4	55	  if ((int)&__l2_priv1_end >= ARCHI_L2_SHARED_ADDR)
+pc (/32): 0x1C0084A4
+(gdb) 
+0x1c0084a8	55	  if ((int)&__l2_priv1_end >= ARCHI_L2_SHARED_ADDR)
+pc (/32): 0x1C0084A8
+(gdb) 
+pos_l2_priv1_size () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:65
+65	    return ARCHI_L2_SHARED_ADDR - (int)&__l2_priv1_end;
+pc (/32): 0x1C0084CC
+(gdb) 
+0x1c0084d0	65	    return ARCHI_L2_SHARED_ADDR - (int)&__l2_priv1_end;
+pc (/32): 0x1C0084D0
+(gdb) 
+pos_l2_priv1_base () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:58
+58	    return (void *)&__l2_priv1_end;
+pc (/32): 0x1C0084D4
+(gdb) 
+0x1c0084d8	58	    return (void *)&__l2_priv1_end;
+pc (/32): 0x1C0084D8
+(gdb) 
+pos_allocs_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc_pool.c:56
+56	    pos_alloc_init(&pos_alloc_l2[1], pos_l2_priv1_base(), pos_l2_priv1_size());
+pc (/32): 0x1C0084DC
+(gdb) 
+0x1c0084e0	56	    pos_alloc_init(&pos_alloc_l2[1], pos_l2_priv1_base(), pos_l2_priv1_size());
+pc (/32): 0x1C0084E0
+(gdb) 
+0x1c0084e4	56	    pos_alloc_init(&pos_alloc_l2[1], pos_l2_priv1_base(), pos_l2_priv1_size());
+pc (/32): 0x1C0084E4
+(gdb) 
+pos_alloc_init (a=a@entry=0x1c000994 <pos_alloc_l2+4>, _chunk=0x1c0086a0, size=31072) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc.c:180
+180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008448
+(gdb) 
+0x1c00844c	180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C00844C
+(gdb) 
+184	    a->first_free = chunk;
+pc (/32): 0x1C008450
+(gdb) 
+185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008454
+(gdb) 
+0x1c008458	185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008458
+(gdb) 
+186	    if (size > 0)
+pc (/32): 0x1C00845C
+(gdb) 
+188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008460
+(gdb) 
+0x1c008464	188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008464
+(gdb) 
+189	        chunk->next = NULL;
+pc (/32): 0x1C008468
+(gdb) 
+191	}
+pc (/32): 0x1C00846C
+(gdb) 
+pos_l2_shared_size () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/implem/link.h:73
+73	  return ARCHI_L2_SHARED_ADDR + ARCHI_L2_SHARED_SIZE - (int)&__l2_shared_end;
+pc (/32): 0x1C0084E8
+(gdb) 
+0x1c0084ec	73	  return ARCHI_L2_SHARED_ADDR + ARCHI_L2_SHARED_SIZE - (int)&__l2_shared_end;
+pc (/32): 0x1C0084EC
+(gdb) 
+pos_allocs_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc_pool.c:59
+59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C0084F0
+(gdb) 
+0x1c0084f4	59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C0084F4
+(gdb) 
+0x1c0084f8	59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C0084F8
+(gdb) 
+0x1c0084fc	59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C0084FC
+(gdb) 
+0x1c008500	59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C008500
+(gdb) 
+0x1c008504	59	    pos_alloc_init(&pos_alloc_l2[2], pos_l2_shared_base(), pos_l2_shared_size());
+pc (/32): 0x1C008504
+(gdb) 
+pos_alloc_init (a=a@entry=0x1c000998 <pos_alloc_l2+8>, _chunk=0x1c010004, size=458748) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc.c:180
+180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008448
+(gdb) 
+0x1c00844c	180	    pos_alloc_chunk_t *chunk = (pos_alloc_chunk_t *)ALIGN_UP((int)_chunk, MIN_CHUNK_SIZE);
+pc (/32): 0x1C00844C
+(gdb) 
+184	    a->first_free = chunk;
+pc (/32): 0x1C008450
+(gdb) 
+185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008454
+(gdb) 
+0x1c008458	185	    size = size - ((int)chunk - (int)_chunk);
+pc (/32): 0x1C008458
+(gdb) 
+186	    if (size > 0)
+pc (/32): 0x1C00845C
+(gdb) 
+188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008460
+(gdb) 
+0x1c008464	188	        chunk->size = ALIGN_DOWN(size, MIN_CHUNK_SIZE);
+pc (/32): 0x1C008464
+(gdb) 
+189	        chunk->next = NULL;
+pc (/32): 0x1C008468
+(gdb) 
+191	}
+pc (/32): 0x1C00846C
+(gdb) 
+pos_allocs_init () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/alloc_pool.c:84
+84	}
+pc (/32): 0x1C008508
+(gdb) 
+0x1c00850c	84	}
+pc (/32): 0x1C00850C
+(gdb) 
+0x1c008510	84	}
+pc (/32): 0x1C008510
+(gdb) 
+pos_init_do_ctors () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:33
+33	    for(fpp = ctor_list+1;  *fpp != 0;  ++fpp)
+pc (/32): 0x1C0083D0
+(gdb) 
+0x1c0083d4	33	    for(fpp = ctor_list+1;  *fpp != 0;  ++fpp)
+pc (/32): 0x1C0083D4
+(gdb) 
+0x1c0083d8	33	    for(fpp = ctor_list+1;  *fpp != 0;  ++fpp)
+pc (/32): 0x1C0083D8
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:79
+79	  pos_io_start();
+pc (/32): 0x1C0083F0
+(gdb) 
+pos_io_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/lib/libc/minimal/io.c:375
+375	{
+pc (/32): 0x1C008358
+(gdb) 
+0x1c00835c	375	{
+pc (/32): 0x1C00835C
+(gdb) 
+378	    uart_open(CONFIG_IO_UART_ITF, CONFIG_IO_UART_BAUDRATE);
+pc (/32): 0x1C008360
+(gdb) 
+0x1c008364	378	    uart_open(CONFIG_IO_UART_ITF, CONFIG_IO_UART_BAUDRATE);
+pc (/32): 0x1C008364
+(gdb) 
+0x1c008368	378	    uart_open(CONFIG_IO_UART_ITF, CONFIG_IO_UART_BAUDRATE);
+pc (/32): 0x1C008368
+(gdb) 
+0x1c00836c	378	    uart_open(CONFIG_IO_UART_ITF, CONFIG_IO_UART_BAUDRATE);
+pc (/32): 0x1C00836C
+(gdb) 
+plp_udma_cg_get () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/udma/udma_v3.h:244
+244	  return pulp_read32(ARCHI_SOC_PERIPHERALS_ADDR + ARCHI_UDMA_OFFSET + UDMA_CONF_OFFSET + UDMA_CONF_CG_OFFSET);
+pc (/32): 0x1C0085C4
+(gdb) 
+0x1c0085c8	244	  return pulp_read32(ARCHI_SOC_PERIPHERALS_ADDR + ARCHI_UDMA_OFFSET + UDMA_CONF_OFFSET + UDMA_CONF_CG_OFFSET);
+pc (/32): 0x1C0085C8
+(gdb) 
+uart_open (uart_id=uart_id@entry=0, baudrate=baudrate@entry=115200) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/drivers/uart.c:59
+59	  plp_udma_cg_set(plp_udma_cg_get() | (1<<periph_id));
+pc (/32): 0x1C0085CC
+(gdb) 
+plp_udma_cg_set (value=1) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/udma/udma_v3.h:240
+240	  pulp_write32(ARCHI_SOC_PERIPHERALS_ADDR + ARCHI_UDMA_OFFSET + UDMA_CONF_OFFSET + UDMA_CONF_CG_OFFSET, value);
+pc (/32): 0x1C0085D0
+(gdb) 
+soc_eu_eventMask_get (reg=4) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:34
+34	  return pulp_read32(ARCHI_SOC_EU_ADDR + reg);
+pc (/32): 0x1C0085D4
+(gdb) 
+0x1c0085d8	34	  return pulp_read32(ARCHI_SOC_EU_ADDR + reg);
+pc (/32): 0x1C0085D8
+(gdb) 
+0x1c0085dc	34	  return pulp_read32(ARCHI_SOC_EU_ADDR + reg);
+pc (/32): 0x1C0085DC
+(gdb) 
+soc_eu_eventMask_setEvent (first_reg=4, evt=0) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:47
+47	  soc_eu_eventMask_set(reg, soc_eu_eventMask_get(reg) & ~(1 << evt));
+pc (/32): 0x1C0085E0
+(gdb) 
+soc_eu_eventMask_set (value=4294967294, reg=4) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:30
+30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C0085E4
+(gdb) 
+soc_eu_eventMask_get (reg=4) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:34
+34	  return pulp_read32(ARCHI_SOC_EU_ADDR + reg);
+pc (/32): 0x1C0085E8
+(gdb) 
+soc_eu_eventMask_setEvent (first_reg=4, evt=1) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:47
+47	  soc_eu_eventMask_set(reg, soc_eu_eventMask_get(reg) & ~(1 << evt));
+pc (/32): 0x1C0085EC
+(gdb) 
+soc_eu_eventMask_set (value=4294967292, reg=4) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/soc_eu/soc_eu_v2.h:30
+30	  pulp_write32(ARCHI_SOC_EU_ADDR + reg, value);
+pc (/32): 0x1C0085F0
+(gdb) 
+uart_setup (baudrate=115200, channel=0) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/drivers/uart.c:46
+46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C0085F4
+(gdb) 
+0x1c0085f8	46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C0085F8
+(gdb) 
+0x1c0085fc	46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C0085FC
+(gdb) 
+0x1c008600	46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C008600
+(gdb) 
+0x1c008604	46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C008604
+(gdb) 
+0x1c008608	46	  int div =  (pos_freq_domains[PI_FREQ_DOMAIN_PERIPH] + baudrate/2) / baudrate;
+pc (/32): 0x1C008608
+(gdb) 
+48	  plp_uart_setup(channel - ARCHI_UDMA_UART_ID(0), 0, div-1);
+pc (/32): 0x1C00860C
+(gdb) 
+plp_uart_setup (clk_counter=<optimized out>, parity=0, channel=0) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/udma/uart/udma_uart_v1.h:124
+124	  val |= ((clk_counter) << 16);
+pc (/32): 0x1C008610
+(gdb) 
+0x1c008614	124	  val |= ((clk_counter) << 16);
+pc (/32): 0x1C008614
+(gdb) 
+126	  pulp_write32(ARCHI_UDMA_ADDR + UDMA_UART_OFFSET(channel) + UDMA_CHANNEL_CUSTOM_OFFSET + UART_SETUP_OFFSET, val);
+pc (/32): 0x1C008618
+(gdb) 
+uart_open (uart_id=uart_id@entry=0, baudrate=baudrate@entry=115200) at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/drivers/uart.c:67
+67	}
+pc (/32): 0x1C00861C
+(gdb) 
+0x1c008620	67	}
+pc (/32): 0x1C008620
+(gdb) 
+pos_io_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/lib/libc/minimal/io.c:380
+380	    pos_io_uart_enabled = 1;
+pc (/32): 0x1C008370
+(gdb) 
+0x1c008374	380	    pos_io_uart_enabled = 1;
+pc (/32): 0x1C008374
+(gdb) 
+0x1c008378	380	    pos_io_uart_enabled = 1;
+pc (/32): 0x1C008378
+(gdb) 
+385	}
+pc (/32): 0x1C00837C
+(gdb) 
+0x1c008380	385	}
+pc (/32): 0x1C008380
+(gdb) 
+0x1c008384	385	}
+pc (/32): 0x1C008384
+(gdb) 
+0x1c008388	385	}
+pc (/32): 0x1C008388
+(gdb) 
+hal_irq_enable () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/include/hal/riscv/riscv_v5.h:282
+282	  hal_spr_read_then_set(0x300, 0x1<<3);
+pc (/32): 0x1C0083F4
+(gdb) 
+pos_init_start () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/init.c:88
+88	}
+pc (/32): 0x1C0083F8
+(gdb) 
+0x1c0083fc	88	}
+pc (/32): 0x1C0083FC
+(gdb) 
+0x1c008400	88	}
+pc (/32): 0x1C008400
+(gdb) 
+0x1c008404	88	}
+pc (/32): 0x1C008404
+(gdb) 
+pos_init_entry () at /home/sumanth/shivam/pulp/pulpissimo-clean/pulpissimo/pulp-runtime/kernel/crt0.S:73
+73	    addi  a0, x0, 0
+pc (/32): 0x1C0080E8
+(gdb) 
+74	    addi  a1, x0, 0
+pc (/32): 0x1C0080EC
+(gdb) 
+77	    la    t2, main
+pc (/32): 0x1C0080F0
+(gdb) 
+0x1c0080f4	77	    la    t2, main
+pc (/32): 0x1C0080F4
+(gdb) 
+78	    jalr  x1, t2
+pc (/32): 0x1C0080F8
+(gdb) 
+main () at test.c:42
+42	{
+pc (/32): 0x1C008208
+(gdb) 
+0x1c00820c	42	{
+pc (/32): 0x1C00820C
+(gdb) 
+43	    authenticator();
+pc (/32): 0x1C008210
+(gdb) 
+authenticator () at test.c:26
+26	{
+pc (/32): 0x1C00812C
+(gdb) 
+0x1c008130	26	{
+pc (/32): 0x1C008130
+(gdb) 
+29	    char input[256] = "AAAAAAAAAAAAAAAAAAAA\x0c\x81\x00\x1c";
+pc (/32): 0x1C008134
+(gdb) 
+0x1c008138	29	    char input[256] = "AAAAAAAAAAAAAAAAAAAA\x0c\x81\x00\x1c";
+pc (/32): 0x1C008138
+(gdb) 
+0x1c00813c	29	    char input[256] = "AAAAAAAAAAAAAAAAAAAA\x0c\x81\x00\x1c";
+pc (/32): 0x1C00813C
+(gdb) 
+

@@ -64,8 +64,10 @@ module pulpissimo #(
 
   inout wire pad_xtal_in,
   inout wire pad_spclk_in,
-  inout wire monitor_alert_int_o
-
+  inout wire monitor_alert_int_o,
+  // DEBUG
+  inout wire hash_match_o,
+  inout wire monitor_new_pc_o
   // output logic [31:0] monitor_pc_id,
   // output logic        monitor_new_pc,
   // input  logic        monitor_alert_int
@@ -960,6 +962,9 @@ module pulpissimo #(
         // Shivam
         .pad_spclk_in                 ( pad_spclk_in                     ),
         .monitor_alert_int_o          ( monitor_alert_int_o              ),
+        // DEBUG
+        .hash_match_o                 ( hash_match_o                     ),        
+        .monitor_new_pc_o             ( monitor_new_pc_o                 ),    
         .*
     );
 
