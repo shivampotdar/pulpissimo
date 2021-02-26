@@ -26,5 +26,5 @@ set_msg_config -id {[Filemgmt 20-742]}      -new_severity "error"
 # Set number of CPUs, default to 4 if system's getconf doesn't work
 set CPUS [exec getconf _NPROCESSORS_ONLN]
 if { ![info exists CPUS] } {
-  set CPUS 4
+  set CPUS 20
 }

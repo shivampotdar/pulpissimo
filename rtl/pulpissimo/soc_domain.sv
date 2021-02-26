@@ -241,7 +241,10 @@ module soc_domain #(
 
     // Shivam
     input  logic                             pad_spclk_in,
-    output logic                             monitor_alert_int_o
+    output logic                             monitor_alert_int_o,
+    // DEBUG
+    output logic                             hash_match_o,
+    output logic                             monitor_new_pc_o
     // output logic [31:0]                      monitor_pc_id,
     // output logic                             monitor_new_pc,
     // input  logic                             monitor_alert_int
@@ -445,7 +448,10 @@ module soc_domain #(
         .jtag_tdi_i                  (jtag_tdi_i),
         // Shivam
         .pad_spclk_in                (pad_spclk_in),
-        .monitor_alert_int_o         (monitor_alert_int_o)
+        .monitor_alert_int_o         (monitor_alert_int_o),
+        // DEBUG
+        .hash_match_o                (hash_match_o),
+        .monitor_new_pc_o            (monitor_new_pc_o)    
 
         // .monitor_pc_id               (monitor_pc_id),
         // .monitor_new_pc              (monitor_new_pc),
