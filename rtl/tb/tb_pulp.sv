@@ -48,7 +48,7 @@ module tb_pulp;
 
    /* simulation platform parameters */
 
-   // Choose your core: 0 for RISCY, 1 for ZERORISCY
+   // Choose your core: 0 for RISCY, 1 for IBEX RV32IMC (formerly ZERORISCY), 2 for IBEX RV32EC (formerly MICRORISCY)
    parameter CORE_TYPE            = 0;
    // if RISCY is instantiated (CORE_TYPE == 0), RISCY_FPU enables the FPU
    parameter RISCY_FPU            = 1;
@@ -533,9 +533,9 @@ module tb_pulp;
 
     // jtag calls from dpi
     SimJTAG #(
-        .TICK_DELAY (1)
-    )
-    i_sim_jtag (
+        .TICK_DELAY (1),
+        .PORT       (4567)
+    ) i_sim_jtag (
         .clock                ( w_clk_ref            ),
         .reset                ( ~s_rst_n             ),
         .enable               ( sim_jtag_enable      ),
